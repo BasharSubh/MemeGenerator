@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  background-color: #1c1c1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Inter, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#root{
+  background: #b9c1dd;
+  width: 920px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 7px;
+  overflow: auto;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  border: 1px solid #000;
+
 }
 
-.App-link {
-  color: #61dafb;
+
+.header {
+  height: 95px;
+  width: 720px;
+  padding: 20px;
+  align-items: center;
+  display: flex;
+  background-color: blueviolet;
+  color: aliceblue;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header-title {
+  margin-right: auto;
 }
+
+.header-text {
+ font-size: 18px;
+}
+
+.header-img {
+  height: 100%;
+  margin-right: 6px;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr ;
+  grid-template-rows: 70px 70px ;
+  gap: 10px;
+  align-items: center;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.main-upper-text {
+  padding-right: 3px;
+}
+
+.main-upper-input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.main-bottom-text {
+  padding-right: 3px;
+}
+
+.main-bottom-input {
+  padding: 6px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.main-bottom {
+  grid-column: 1 / -1;
+  padding: 10px;
+  background-color: blueviolet;
+  color: aliceblue;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.main-bottom:hover {
+  background-color: darkblue;
+}
+
+.main-img {
+  justify-content: center;
+  align-items: center;
+  max-width: 720px;
+  border-radius: 5px;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.container {
+  position: relative;
+}
+
+.meme-upper-text {
+  position: absolute;
+  top: 10px;
+  left: 20%;
+  padding: 10px;
+  color: aliceblue;
+  font-size: 40px;
+  font-weight: 1000;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.meme-bottom-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  color: aliceblue;
+  font-size: 40px;
+  padding: 10px;
+  font-weight: 1000;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+
+
